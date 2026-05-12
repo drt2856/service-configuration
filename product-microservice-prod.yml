@@ -1,2 +1,15 @@
 booking:
   property: Product Profile Prod
+
+spring:
+  application:
+    name: product-microservice
+  data:
+    mongodb.uri: mongodb://127.0.0.1:27017/productdb
+
+server:
+  port: 0
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
