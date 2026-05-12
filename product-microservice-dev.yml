@@ -15,4 +15,4 @@ eureka:
     instance-id: ${spring.application.name}:${random.uuid}
 
 app:
-  testProp: 2
+  testProp: 3
