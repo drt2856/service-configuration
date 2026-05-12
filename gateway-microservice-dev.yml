@@ -1,0 +1,22 @@
+booking:
+  property: Booking Profile Dev Update
+
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: product
+              uri: lb://product-microservice
+              predicates:
+                - Path=/api/product/**
+            - id: booking
+              uri: lb://booking-microservice
+              predicates:
+                - Path=/api/booking/**
+          discovery:
+            locator:
+              enabled: true
+
+server:
+  port: 8080
