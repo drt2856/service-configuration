@@ -1,6 +1,8 @@
 booking:
   property: Booking Profile Dev Update
-
+spring:
+  application:
+    name: gateway-microservice
   cloud:
     gateway:
       server:
