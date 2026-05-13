@@ -5,7 +5,6 @@ spring:
   application:
     name: booking-microservice
   datasource:
-    url: jdbc:postgresql://localhost:5432/product
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
