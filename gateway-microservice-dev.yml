@@ -11,7 +11,7 @@ spring:
             - id: product
               uri: lb://product-microservice
               predicates:
-                - Path=/api/product/**
+                - Path=/api/product/**, Path=/api/category/**
             - id: booking
               uri: lb://booking-microservice
               predicates:
